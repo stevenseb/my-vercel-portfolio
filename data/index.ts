@@ -83,7 +83,7 @@ export const projects = [
     id: 2,
     title: "Maison Elysee",
     des: "Shop for the latest fashion trends on this full-stack ecommerce site with user authentication, payments, and more.",
-    img: "/ME.png",
+    img: "/ME.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://maison-elysee.vercel.app/",
   },
