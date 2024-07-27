@@ -1,9 +1,10 @@
 <div align="center">
  
   
-  
+  ![ESDesigns](https://github.com/user-attachments/assets/4faf42b5-f3c6-4b9a-98b8-3a880638b38b)
+
   <br />
-  ![ESDesigns](https://github.com/user-attachments/assets/1044f015-823b-4246-8b52-c8b9465dbf61)
+
  <br />
     <a href="https://youtu.be/FTH6Dn3AyIQ" target="_blank">
       <img src="https://github.com/adrianhajdin/portfolio/assets/151519281/c6ca3c03-6cb7-4f67-a9b9-a73da5bfa0d8" alt="Project Banner">
