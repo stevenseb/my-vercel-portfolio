@@ -48,8 +48,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "JavaScript", "PostgreSQL"];
-  const rightLists = ["TypeScript", "Next.js", "Docker", "MongoDB"];
+  const leftLists = ["ReactJS", "Express", "JavaScript", "Python", "PostgreSQL", "DaisyUI"];
+  const rightLists = ["TypeScript", "Next.js", "Docker", "MongoDB", "Node.js", "Flask"];
 
   // Duplicate lists for continuous scrolling
   const duplicatedLeftLists = [...leftLists, ...leftLists];
@@ -127,42 +127,42 @@ export const BentoGridItem = ({
           {id === 2 && <GridGlobe />}
 
           {id === 3 && (
-  <div className="absolute right-0 top-0 bottom-0 w-1/2 flex gap-2 lg:gap-4 overflow-hidden">
-    {/* Left column */}
-    <div className="flex-1 overflow-hidden">
-      <div className="h-full overflow-y-hidden">
-        <div className="animate-scroll-up">
-          {[...duplicatedLeftLists, ...duplicatedLeftLists].map((item, i) => (
-            <span
-              key={i}
-              className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
-              opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-    
-    {/* Right column */}
-    <div className="flex-1 overflow-hidden">
-      <div className="h-full overflow-y-hidden">
-        <div className="animate-scroll-down">
-          {[...duplicatedRightLists, ...duplicatedRightLists].map((item, i) => (
-            <span
-              key={i}
-              className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
-              opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+            <div className="absolute right-0 top-0 bottom-0 w-1/2 flex gap-2 lg:gap-4 overflow-hidden">
+              {/* Left column */}
+              <div className="flex-1 overflow-hidden">
+                <div className="h-full overflow-y-hidden custom-scrollbar">
+                  <div className="animate-scroll-up">
+                    {[...duplicatedLeftLists, ...duplicatedLeftLists].map((item, i) => (
+                      <span
+                        key={i}
+                        className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
+                        opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right column */}
+              <div className="flex-1 overflow-hidden">
+                <div className="h-full overflow-y-hidden custom-scrollbar">
+                  <div className="animate-scroll-down">
+                    {[...duplicatedRightLists, ...duplicatedRightLists].map((item, i) => (
+                      <span
+                        key={i}
+                        className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
+                        opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
 
           {id === 6 && (

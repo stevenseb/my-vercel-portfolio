@@ -76,7 +76,7 @@ export const projects = [
     title: "Landbnb",
     des: "List or book vacant land for camping, storage, or other uses. A full-stack app with user authentication, booking, and more.",
     img: "/LBNB.png",
-    iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/js.svg", "/express.webp"],
     link: "https://landbnb-n8qv.onrender.com/",
   },
   {
@@ -84,24 +84,24 @@ export const projects = [
     title: "Maison Elysee",
     des: "Shop for the latest fashion trends on this full-stack ecommerce site with user authentication, payments, and more.",
     img: "/ME2.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/daisy.webp"],
     link: "https://maison-elysee.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "TaskWave",
+    des: "A Kanban Style Task Manager.",
+    img: "/coming-soon.jpg",
+    iconLists: ["/re.svg", "/js.svg", "/express.webp"],
+    link: "/ericstevens.dev",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Menuable",
+    des: "A full-stack app for small restaurants to manage their menu and orders.",
+    img: "/coming-soon.jpg",
+    iconLists: ["/re.svg", "/js.svg", "/express.webp"],
+    link: "/ericstevens.dev",
   },
 ];
 
@@ -182,7 +182,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Freelance React Food Delivery App",
-    desc: "Designed and developed responsive app for a local restaurant, including user authentication and payments.",
+    desc: "Designed and developed responsive app for a local restaurant, including user authentication.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
@@ -206,13 +206,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/stevenseb",
   },
   {
     id: 2,
     img: "/kaggle.svg",
+    link: "https://www.kaggle.com/stevenseb",
   },
   {
     id: 3,
     img: "/link.svg",
+  link: "https://www.linkedin.com/in/ericstevens2/",
   },
-];
+]; 

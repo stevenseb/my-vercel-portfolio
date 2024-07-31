@@ -107,9 +107,38 @@
 }
 
 .animate-scroll-up {
-    animation: scrollUp 30s linear infinite;
+    animation: scrollUp 40s linear infinite;
 }
 
 .animate-scroll-down {
-    animation: scrollDown 25s linear infinite;
+    animation: scrollDown 35s linear infinite;
+}
+
+/* Hide scrollbars on medium and slightly larger screens */
+/* Hide scrollbars on medium screens */
+@media (min-width: 720px) and (max-width: 1024px) {
+    .custom-scrollbar {
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+}
+
+/* Ensure scrollbars are hidden on all screens */
+.custom-scrollbar {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
