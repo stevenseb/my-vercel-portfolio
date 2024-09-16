@@ -2,7 +2,7 @@ export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-//   { name: "Testimonials", link: "#testimonials" },
+  //   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -33,7 +33,7 @@ export const gridItems = [
     description: "Using the latest technologies",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-left",
     img: "",
     spareImg: "",
   },
@@ -53,8 +53,9 @@ export const gridItems = [
     title: "Currently building an ecommerce fashion site",
     description: "What I'm working on",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60 sm:w-40",
+    titleClassName:
+      "justify-start md:justify-start lg:justify-start absolute top-0 left-0",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
@@ -84,24 +85,30 @@ export const projects = [
     title: "Maison Elysee",
     des: "Shop for the latest fashion trends on this full-stack ecommerce site with user authentication, payments, and more.",
     img: "/ME2.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "mongodb.svg", "/daisy.webp"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "mongodb.svg",
+      "/daisy.webp",
+    ],
     link: "https://maison-elysee.vercel.app/",
   },
   {
     id: 3,
     title: "TaskWave",
     des: "A Kanban Style Task Manager.",
-    img: "/coming-soon.jpg",
+    img: "/task-wave.png",
     iconLists: ["/re.svg", "/js.svg", "/express.webp"],
-    link: "/ericstevens.dev",
+    link: "https://task-wave.onrender.com",
   },
   {
     id: 4,
     title: "Menuable",
     des: "A full-stack app for small restaurants to manage their menu and orders.",
-    img: "/coming-soon.jpg",
+    img: "/menuable.png",
     iconLists: ["/re.svg", "/js.svg", "/express.webp"],
-    link: "/ericstevens.dev",
+    link: "https://menuable-main.onrender.com",
   },
 ];
 
@@ -175,31 +182,31 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Applied redux state management in the development of a kanban-style collaboration app using React.js, Python and Flask enhancing the dynamic responsiveness and interactivity of the app.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Freelance React Food Delivery App",
-    desc: "Designed and developed responsive app for a local restaurant, including user authentication.",
+    desc: "Designed and developed responsive app for a local restaurant, including user authentication, a rating system and an owner's dashboard to manage orders, inventory, weekly menu, delivery routing and profit/loss reporting.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
-//   {
-//     id: 3,
-//     title: "Freelance App Dev Project",
-//     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-//     className: "md:col-span-2", // change to md:col-span-2
-//     thumbnail: "/exp3.svg",
-//   },
-//   {
-//     id: 4,
-//     title: "Lead Frontend Developer",
-//     desc: "Developed and maintained user-facing features using modern frontend technologies.",
-//     className: "md:col-span-2",
-//     thumbnail: "/exp4.svg",
-//   },
+  //   {
+  //     id: 3,
+  //     title: "Freelance App Dev Project",
+  //     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+  //     className: "md:col-span-2", // change to md:col-span-2
+  //     thumbnail: "/exp3.svg",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Lead Frontend Developer",
+  //     desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //     className: "md:col-span-2",
+  //     thumbnail: "/exp4.svg",
+  //   },
 ];
 
 export const socialMedia = [
@@ -216,6 +223,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-  link: "https://www.linkedin.com/in/ericstevens2/",
+    link: "https://www.linkedin.com/in/ericstevens2/",
   },
-]; 
+];

@@ -2,8 +2,7 @@
 import { cn } from "@/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-import * as THREE from 'three';
-
+import * as THREE from "three";
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -29,7 +28,7 @@ export const CanvasRevealEffect = ({
       <div className="h-full w-full">
         <DotMatrix
           colors={colors ?? [[0, 255, 255]]}
-          dotSize={dotSize ?? 3}
+          dotSize={dotSize ?? 1}
           opacities={
             opacities ?? [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1]
           }
@@ -62,7 +61,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
   colors = [[0, 0, 0]],
   opacities = [0.04, 0.04, 0.04, 0.04, 0.04, 0.08, 0.08, 0.08, 0.08, 0.14],
   totalSize = 4,
-  dotSize = 2,
+  dotSize = 3,
   shader = "",
   center = ["x", "y"],
 }) => {

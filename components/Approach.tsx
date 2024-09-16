@@ -7,29 +7,25 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Why I Love <span className="text-purple">Building Web Apps</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
+      <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 text-2xl">
         {/* add des prop */}
         <Card
-          title="Planning & Design"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="My Story"
+          icon={<AceternityIcon order="My Story" />}
+          des="Since I was about 10 years old (1983) when I got my first computer, which was a TRS-80 from Radio Shack, I have been fascinated with computers. Life took me in a different direction and I served in the military until 2021. I decided to pursue my long-time interest in computing because I am looking for new challenges. Being a software engineer allows me to fit both my analytical side and my creative side into one profession."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            // add these classed for the border rounded overflowing -> rounded-3xl overflow-hidden
             containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I will get to work bringing your vision to life using the best technologies. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="My Passion"
+          icon={<AceternityIcon order="My Passion" />}
+          des="I have many interests ranging from travel to languages to the outdoors. What I am most passionate about in a profession is helping people to solve their problems. I love working with people but I really enjoy solutions to the many challenges that we, as people, face in our everyday lives. What gives me the most pleasure in my work is being able to take pride in the results of anything that I do. It is the best feeling after struggling with challenges to see a final product that I can be proud of."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -47,11 +43,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up and getting it deployed to the web at the domain of your choice."
+          title="My Strength"
+          icon={<AceternityIcon order="My Strength" />}
+          des="I have always been curious about computers. For that reason, I was never afraid to learn more about them. I wrote my first programs in BASIC when I was about 11 years old. I completed most of the A+ certification years ago and ventured into selling used laptops on Ebay during which time I began doing small repairs, diagnosing problems, disassembling laptops and installing various versions of Linux. I am very confident diagnosing and solving problems where the issue or solution aren't obvious."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -131,9 +125,9 @@ const Card = ({
         </h2>
         {/* add this one for the description */}
         <p
-          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 group-hover/canvas-card:text-white text-center
-         group-hover/canvas-card:-translate-y-2 transition duration-200"
+          className="text-base opacity-0 group-hover/canvas-card:opacity-100
+          relative z-10 mt-4 group-hover/canvas-card:text-black text-center
+          group-hover/canvas-card:-translate-y-2 transition duration-200 font-semibold"
           style={{ color: "#E4ECFF" }}
         >
           {des}
