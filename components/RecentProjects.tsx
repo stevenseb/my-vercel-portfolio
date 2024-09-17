@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useRouter } from 'next/navigation';
+import React from "react";
+import { useRouter } from "next/navigation";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
@@ -10,7 +10,7 @@ const RecentProjects = () => {
   const router = useRouter();
 
   const handleProjectClick = (link: string) => {
-    window.open(link, '_blank', 'noopener,noreferrer');
+    window.open(link, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -22,15 +22,12 @@ const RecentProjects = () => {
         </h1>
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
           {projects.map((item) => (
-            <div 
+            <div
               key={item.id}
               onClick={() => handleProjectClick(item.link)}
               className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] cursor-pointer"
             >
-              <PinContainer
-                title={ item.title }
-                href={item.link}
-              >
+              <PinContainer title={item.title} href={item.link}>
                 <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10 rounded-3xl">
                   <img
                     src={item.img}

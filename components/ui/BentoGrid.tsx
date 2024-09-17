@@ -48,8 +48,22 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "JavaScript", "Python", "PostgreSQL", "DaisyUI"];
-  const rightLists = ["TypeScript", "Next.js", "Docker", "MongoDB", "Node.js", "Flask"];
+  const leftLists = [
+    "ReactJS",
+    "Express",
+    "JavaScript",
+    "Python",
+    "PostgreSQL",
+    "DaisyUI",
+  ];
+  const rightLists = [
+    "TypeScript",
+    "Next.js",
+    "Docker",
+    "MongoDB",
+    "Node.js",
+    "Flask",
+  ];
 
   // Duplicate lists for continuous scrolling
   const duplicatedLeftLists = [...leftLists, ...leftLists];
@@ -95,7 +109,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          }`}
         >
           {spareImg && (
             <img
@@ -120,7 +136,9 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
           </div>
-          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}>
+          <div
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+          >
             {title}
           </div>
 
@@ -132,49 +150,56 @@ export const BentoGridItem = ({
               <div className="flex-1 overflow-hidden">
                 <div className="h-full overflow-y-hidden custom-scrollbar">
                   <div className="animate-scroll-up">
-                    {[...duplicatedLeftLists, ...duplicatedLeftLists].map((item, i) => (
-                      <span
-                        key={i}
-                        className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
+                    {[...duplicatedLeftLists, ...duplicatedLeftLists].map(
+                      (item, i) => (
+                        <span
+                          key={i}
+                          className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
                         opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
-                      >
-                        {item}
-                      </span>
-                    ))}
+                        >
+                          {item}
+                        </span>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
-              
+
               {/* Right column */}
               <div className="flex-1 overflow-hidden">
                 <div className="h-full overflow-y-hidden custom-scrollbar">
                   <div className="animate-scroll-down">
-                    {[...duplicatedRightLists, ...duplicatedRightLists].map((item, i) => (
-                      <span
-                        key={i}
-                        className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
+                    {[...duplicatedRightLists, ...duplicatedRightLists].map(
+                      (item, i) => (
+                        <span
+                          key={i}
+                          className="block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base 
                         opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E] mb-3"
-                      >
-                        {item}
-                      </span>
-                    ))}
+                        >
+                          {item}
+                        </span>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
+              <div
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
+              >
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
                 position="left"
-                handleClick={handleCopy}
+                onClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
             </div>

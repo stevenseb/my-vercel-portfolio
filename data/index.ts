@@ -1,3 +1,14 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+export interface SocialMediaItem {
+  id: number;
+  img?: string;
+  icon?: any;
+  link: string;
+  tooltip: string;
+  action?: "copy" | "link";
+}
+
 export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#about" },
@@ -209,20 +220,33 @@ export const workExperience = [
   //   },
 ];
 
-export const socialMedia = [
+export const socialMedia: SocialMediaItem[] = [
   {
     id: 1,
     img: "/git.svg",
     link: "https://github.com/stevenseb",
+    tooltip: "Visit my GitHub",
+    action: "link",
   },
   {
     id: 2,
     img: "/kaggle.svg",
     link: "https://www.kaggle.com/stevenseb",
+    tooltip: "Check out my Kaggle profile",
+    action: "link",
   },
   {
     id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/ericstevens2/",
+    tooltip: "Connect with me on LinkedIn",
+    action: "link",
+  },
+  {
+    id: 4,
+    icon: faEnvelope,
+    link: "mailto:your.email@example.com",
+    tooltip: "Copy my email",
+    action: "copy",
   },
 ];
