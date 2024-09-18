@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Eric's Portfolio",
-  description: "Modern & Minimal Web Developer Portfolio",
+  description: "Modern & Minimal Next.js Web Developer Portfolio",
 };
 
 export default function RootLayout({
@@ -17,11 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        {/* <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.png" type="image/png" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> */}
-      </head>
+      <head></head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -30,6 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
