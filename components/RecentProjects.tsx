@@ -49,7 +49,8 @@ const RecentProjects = () => {
                 >
                   {item.des}
                 </p>
-
+                {/* <h4 className="text-purple text-sm font-bold">{item.github}</h4> */}
+                <a href={item.gurl}>{item.gtext}</a>
                 <div className="flex items-center justify-between mt-7 mb-3">
                   <div className="flex items-center">
                     {item.iconLists.map((icon, index) => (

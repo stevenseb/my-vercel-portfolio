@@ -20,7 +20,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I believe that presentation is key but functionality is crucial",
+    title: "Presentation is key, but functionality is crucial",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -30,7 +30,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Willing to work across time zones",
+    title: "Willing to collaborate remotely",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -90,6 +90,8 @@ export const projects = [
     img: "/LBNB.png",
     iconLists: ["/re.svg", "/js.svg", "/express.webp"],
     link: "https://landbnb-n8qv.onrender.com/",
+    gurl: "https://github.com/stevenseb/landBNB",
+    gtext: "GitHub Repo",
   },
   {
     id: 2,
@@ -104,14 +106,18 @@ export const projects = [
       "/daisy.webp",
     ],
     link: "https://maison-elysee.vercel.app/",
+    gurl: "https://github.com/stevenseb/maison-elysee",
+    gtext: "GitHub Repo",
   },
   {
     id: 3,
     title: "TaskWave",
-    des: "A Kanban Style Task Manager.",
+    des: "A Kanban Style Task Manager. A full-stack app built with React.js, Python and Flask.",
     img: "/task-wave.png",
     iconLists: ["/re.svg", "/js.svg", "/express.webp"],
     link: "https://task-wave.onrender.com",
+    gurl: "https://github.com/TheRealHezma/Group-project",
+    gtext: "GitHub Repo",
   },
   {
     id: 4,
@@ -120,6 +126,8 @@ export const projects = [
     img: "/menuable.png",
     iconLists: ["/re.svg", "/js.svg", "/express.webp"],
     link: "https://menuable-main.onrender.com",
+    gurl: "https://github.com/stevenseb/Menuable",
+    gtext: "GitHub Repo",
   },
 ];
 
